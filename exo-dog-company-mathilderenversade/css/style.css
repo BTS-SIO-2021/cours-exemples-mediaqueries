@@ -1,0 +1,163 @@
+body {
+    background-color: #674B24;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+#container {
+   width: 50%;
+   background-color: white;
+   border: solid black 5px;
+   margin: 2% auto 5% ;
+   /* lien vers la documentation pour text-align : https://developer.mozilla.org/fr/docs/Web/CSS/text-align */
+   text-align:center;
+}
+
+h1, h2, h3, h4 {
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+    font-size: 230%;
+    border-top: solid darkred 3px;
+    border-bottom: solid darkred 3px;
+    margin: 20px;
+    padding: 1%;
+}
+
+h2 {
+    font-size: 150%;
+    padding-bottom: 15px;
+}
+
+h3, h4 {
+    color: darkred;
+    font-size: 120%;
+}
+
+main, footer {
+    background-color: #EEEEEE;
+}
+
+main {
+    width: 80%;
+    margin : 16px auto;
+    padding: 25px 0 0;
+    /*line-height https://developer.mozilla.org/fr/docs/Web/CSS/line-height*/
+    line-height: 1.2em;
+}
+
+footer {
+    padding: 20px 0 50px;
+    margin: 0 3% 3%;
+}
+
+section p {
+    text-align: left;
+    padding: 20px;
+}
+
+aside {
+    border-top: solid black 3px;
+    padding: 20px ;
+}
+
+aside p {
+    font-style: italic;
+    font-size: 0.6em;
+}
+
+section img {
+    width: 150px;
+    height: 150px;
+}
+
+header img {
+    margin-top: 2%;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 8px 16px;
+    font-weight: bold;
+}
+
+#produits {
+    background-color: white;
+}
+
+li a {
+    color: darkred;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 2%/50%;
+    text-decoration: none;
+    background-color: #EEEEEE;
+    padding: 4px;
+    margin: 2px 0;
+    display: block;
+}
+
+#produits h3 {
+    padding: 16px 0;
+}
+
+#presentation-produits {
+    background-color: white;
+}
+
+#presentation-produits article {
+    width: 25%;
+    height: 250px;
+    border: solid black 2px;
+    padding: 10px;
+    /*display: inline-block;*/
+    margin: 0 1%;
+}
+
+#presentation-produits h3 {
+    font-size: 150%;
+    padding-bottom: 15px;
+    color: black;
+    padding: 3%;
+}
+
+#presentation-produits h4 {
+    margin: 15% 0;
+}
+
+#presentation-produits p {
+    padding: 0;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+#presentation-produits img {
+    width: 100%;
+}
+
+#flex {
+    display: flex;
+    justify-content: center;
+}
+
+@media print {
+    #container {
+        border: none;
+        width: 100%;
+    }
+
+    footer {
+        display: none;
+    }
+
+    img {
+        display: none;
+    }
+
+    button {
+        display: none;
+    }
+}
